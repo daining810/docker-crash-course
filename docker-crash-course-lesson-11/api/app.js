@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.json([
     {
       "id":"2",
-      "title":"Game Review: Pokemon Brillian Diamond---"
+      "title":"Game Review: Pokemon Brillian Diamond..."
     },
     {
       "id":"3",

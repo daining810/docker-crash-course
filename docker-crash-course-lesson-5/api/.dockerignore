@@ -1,2 +1,1 @@
-# 指定忽略的文件,Dockerfile中的操作忽略所有指定的文件
 node_modules

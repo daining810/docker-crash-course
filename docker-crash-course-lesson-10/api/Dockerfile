@@ -1,17 +1,15 @@
-FROM node:17-alpine
+FROM node:16.20.2
 
-# 安装node监听器,监听js和json文件的变化,立即响应
-RUN npm install -g nodemon
+WORKDIR /home/api
 
-WORKDIR /app
+RUN npm i -g nodemon
 
 COPY package.json .
 
-RUN npm install
+RUN npm i
 
 COPY . .
 
 EXPOSE 4000
 
 CMD ["npm", "run", "dev"]
-
